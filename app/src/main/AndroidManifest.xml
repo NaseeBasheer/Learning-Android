@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginApp22oct21">
         <activity
-            android:name=".ActivityTwo"
+            android:name=".ui.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".ui.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.LoginActivity"
             android:exported="true"></activity>
     </application>
 

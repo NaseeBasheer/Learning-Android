@@ -1,8 +1,9 @@
-package com.example.loginapp22oct21
+package com.example.loginapp22oct21.ui
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.loginapp22oct21.R
 import kotlinx.coroutines.*
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -16,7 +17,7 @@ class SplashScreenActivity : AppCompatActivity() {
     private fun goToMainActivity() {
         CoroutineScope(Dispatchers.Main).launch {
             delay(SCREEN_DELAY)
-            startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+            startActivity(Intent(this@SplashScreenActivity, LoginActivity::class.java))
             finish()
         }
     }
